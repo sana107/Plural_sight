@@ -1,0 +1,237 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display :flex;
+}
+
+.leftchild{
+
+  width: 50%;
+  height: 120vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.img_logo{
+    width: 30%;
+}
+.rightchild{
+
+    width: 50%;
+    height: 120vh;
+    background-image: url(./login-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.rightchild h1{
+     
+    color: white;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+
+}
+.rightchild h2{
+
+    color: white;
+    font-size: 60px;
+
+}
+
+.rightchild button{
+
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: medium;
+    border-radius: 1px solid;
+    border-color: rgb(99, 99, 98); 
+    margin-top: 50px;
+
+}
+
+form{
+
+    width: 100%;
+    height: auto;
+   margin-top: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    color: white;
+
+}
+.line{
+
+    width: 30px;
+    
+}
+form label{
+
+   color: white;
+   margin-right: 375px;
+   margin-bottom: 4px;
+   font-size: medium;
+   font-family: sans-serif;
+}
+form input{
+
+    width: 80%;
+    height: 40px;  
+    background: transparent;
+    border-radius: 2px;
+    border:1px solid;
+    border-color: rgb(99, 99, 98); 
+    margin-bottom: 30px;
+    color: white;
+
+}
+#lbl{
+
+    font-family: sans-serif;
+    margin-right: 440px;
+}
+.btn_1{
+  
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(50, 132, 199, 0.874);
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 45px;
+    margin-top: -5px;
+    color: white;
+    font-size: medium;
+    padding-left: 230px;
+    padding-right: 230px;
+}
+
+.pwd{
+
+    color: rgba(106, 182, 244, 0.874);
+    font-size: medium;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+}
+.pwd_2{
+
+    color: rgba(106, 182, 244, 0.874);
+    font-size: medium;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin-bottom: 20px;
+
+}
+form hr{
+   
+    width: 80%;
+    border:1px solid;
+    border-color: rgb(99, 99, 98);
+}
+.btn_2{
+
+    width: 80%;
+    padding: 13px;
+    background-color: rgb(61, 57, 57);
+    color: rgb(250, 245, 245);
+    font-size: medium;
+    margin-top: 25px;
+    border-radius:2%;
+    border: none;
+    margin-bottom: 40px;
+
+
+}
+form span{
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-size: smaller;
+    color: rgb(207, 196, 196);
+
+}
+.line{
+    width: 1px;
+    height: 20px;
+    background-color: white;
+}
+form span a{
+    color: white;
+    text-decoration: none;
+}
+form p{
+    color: white;
+}
+
+@media (max-width:768px) {
+
+    .container{
+
+        width: 100%;
+        height: auto;       
+        /* flex-direction: column-reverse; */
+   }
+
+
+   .leftchild{
+    
+        width: 100%;
+        height: auto;
+   }
+    .rightchild {
+
+        display:none;
+    }
+
+    
+    form label{
+     
+        margin-left: 70px;
+        /* text-align: center; */
+ 
+    }
+
+
+    #lbl{
+
+        margin-left: 70px;
+
+    }
+
+    form label{
+        margin-right: 0px;
+    }
+
+    #lbl{
+        margin-right: 0px;
+    }
+    form p{
+        text-align: center;
+    }
+    form span{
+        width: 70%;
+    }
+
+}
